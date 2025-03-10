@@ -1,24 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Базові стилі контейнера */
 .container {
-  overflow: hidden;
-  border: 2px solid #4e2d5f;
-  background-color: #eedeff;
-  padding: 15px;
-  margin: 20px;
+  background-color: #cfdbff;
+  border: 2px solid #9eaddd;
+  margin: 10px;
+  padding: 0 10px;
 }
 
+/* Очистка плаваючих елементів після контейнера */
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Базові стилі блока */
 .block {
-  width: 250px;
-  height: 100px;
-  float: left;
-  margin: 0 20px;
-  background-color: #7135d8;
-  border: 2px solid #3c3574;
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  background-color: #6077d1;
+  border: 1px solid #3c3574;
 }
 
-.left {
+/* Класи для розміщення */
+.float-left {
   float: left;
 }
 
-.right {
+.float-right {
   float: right;
+}
+
+.blocks-right {
+  float: right;
+}
+
+/* Модифікатори розмірів */
+.block-tall {
+  height: 110px;
+}
+
+.block-wide {
+  width: 250px;
+}
+
+.clear-right {
+  clear: right;
+  margin-top: 0;
+}
+
+/* Контейнер для центрування */
+.wrapper-center {
+  max-width: 540px;
+  margin: 0 auto;
 }

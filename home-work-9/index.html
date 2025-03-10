@@ -3,40 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pr3 - Float Layout</title>
+  <title>Float Layout</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <body>
-    <div class="container">
-      <div class="block left"></div>
-      <div class="block right"></div>
+  <!-- Контейнер 1: один зліва, один справа -->
+  <div class="container">
+    <div class="block float-left"></div>
+    <div class="block float-right"></div>
+  </div>
+
+  <!-- Контейнер 2: один зліва, три справа -->
+  <div class="container">
+    <div class="block float-left"></div>
+    <div class="block float-right"></div>
+    <div class="block float-right"></div>
+    <div class="block float-right"></div>
+  </div>
+
+  <!-- Контейнер 3: два зліва, два справа -->
+  <div class="container">
+    <div class="block float-left"></div>
+    <div class="block float-left"></div>
+    <div class="block float-right"></div>
+    <div class="block float-right"></div>
+  </div>
+
+  <!-- Контейнер 4: три блоки справа (два з них один під одним) -->
+  <div class="container">
+    <div class="blocks-right">
+      <div class="block block-tall float-left"></div>
+      <div class="block float-right"></div>
+      <div class="block float-right clear-right"></div>
     </div>
-  
-    <div class="container">
-      <div class="block left"></div>
-      <div class="block right"></div>
-      <div class="block right"></div>
-      <div class="block right"></div>
+  </div>
+
+  <!-- Контейнер 5: три блоки по центру (один великий і два менші один під одним) -->
+  <div class="container">
+    <div class="wrapper-center">
+      <div class="block block-tall block-wide float-left"></div>
+      <div class="block block-wide float-right"></div>
+      <div class="block block-wide float-right clear-right"></div>
     </div>
-  
-    <div class="container">
-      <div class="block left"></div>
-      <div class="block left"></div>
-      <div class="block right"></div>
-      <div class="block right"></div>
-    </div>
-  
-    <div class="container">
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-    </div>
-    <div class="container">
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-    </div>
+  </div>
 </body>
 
 </html>
